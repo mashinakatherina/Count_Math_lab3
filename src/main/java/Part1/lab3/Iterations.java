@@ -6,7 +6,7 @@ public class Iterations {
     private static final double MIN_RANGE = -15;
     private static final double MAX_RANGE = 15;
     public static final double EPS = 0.0001;
-    private static double x = 0;
+    private static double x ;
     private static double lambda;
 
     public static double countStartX(double minRange, double maxRange, double x) {
