@@ -1,6 +1,6 @@
 package Part1.lab3;
 
-import static lab3.gui.UserInterface.tmpCounter;
+import static Part1.lab3.gui.UserInterface.tmpCounter;
 
 public class Iterations {
     private static final double MIN_RANGE = -15;
