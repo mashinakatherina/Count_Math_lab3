@@ -2,10 +2,10 @@ package Part1.lab3;
 
 
 import static Part1.lab3.Func.*;
-
+import static Part1.lab3.Func.MAX_RANGE;
+import static Part1.lab3.Func.MIN_RANGE;
 public class Newtone  {
-    private static final double MIN_RANGE = -100;
-    private static final double MAX_RANGE = 100;
+
     private static final double EPS = 0.0001;
     private static double x = 0;
 

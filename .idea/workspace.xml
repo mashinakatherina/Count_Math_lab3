@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ce9fb77d-6540-4f33-b4bf-cda04df5c228" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Part1/lab3/Func.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Part1/lab3/Func.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Part1/lab3/Iterations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Part1/lab3/Iterations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Part1/lab3/Newtone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Part1/lab3/Newtone.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +91,7 @@
       <updated>1585474239099</updated>
       <workItem from="1585474243929" duration="283000" />
       <workItem from="1585475046591" duration="1899000" />
-      <workItem from="1585478233849" duration="4930000" />
+      <workItem from="1585478233849" duration="5974000" />
     </task>
     <task id="LOCAL-00001" summary="All first part works (imho)">
       <created>1585475259813</created>
@@ -126,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585516638496</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="todo write counting for part 2&#10;part 1 -ok">
+      <created>1585524942499</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1585524942499</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,41 +146,42 @@
     <MESSAGE value="Partly working second part&#10;todo: count method" />
     <MESSAGE value="Partly working second part&#10;todo: counting" />
     <MESSAGE value="todo write counting" />
-    <option name="LAST_COMMIT_MESSAGE" value="todo write counting" />
+    <MESSAGE value="todo write counting for part 2&#10;part 1 -ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="todo write counting for part 2&#10;part 1 -ok" />
   </component>
   <component name="WindowStateProjectService">
     <state x="295" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1585478345850">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="295" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1585478345850" />
-    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1585516637622">
+    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1585524940966">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1585516637622" />
-    <state width="1493" height="208" key="GridCell.Tab.0.bottom" timestamp="1585524867501">
+    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1585524940966" />
+    <state width="1493" height="207" key="GridCell.Tab.0.bottom" timestamp="1585526085369">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585524867501" />
-    <state width="1493" height="208" key="GridCell.Tab.0.center" timestamp="1585524867501">
+    <state width="1493" height="207" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585526085369" />
+    <state width="1493" height="207" key="GridCell.Tab.0.center" timestamp="1585526085368">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1585524867501" />
-    <state width="1493" height="208" key="GridCell.Tab.0.left" timestamp="1585524867501">
+    <state width="1493" height="207" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1585526085368" />
+    <state width="1493" height="207" key="GridCell.Tab.0.left" timestamp="1585526085368">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1585524867501" />
-    <state width="1493" height="208" key="GridCell.Tab.0.right" timestamp="1585524867501">
+    <state width="1493" height="207" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1585526085368" />
+    <state width="1493" height="207" key="GridCell.Tab.0.right" timestamp="1585526085368">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1585524867501" />
+    <state width="1493" height="207" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1585526085368" />
     <state x="249" y="0" key="SettingsEditor" timestamp="1585477444678">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1585477444678" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1585516646086">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1585524950848">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1585516646086" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1585524950848" />
     <state x="463" y="144" width="609" height="536" key="find.popup" timestamp="1585481978651">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

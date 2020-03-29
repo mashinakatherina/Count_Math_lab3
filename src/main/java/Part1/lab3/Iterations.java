@@ -1,10 +1,8 @@
 package Part1.lab3;
 
-import static Part1.lab3.gui.UserInterface.tmpCounter;
-
+import static Part1.lab3.Func.*;
 public class Iterations {
-    private static final double MIN_RANGE = -15;
-    private static final double MAX_RANGE = 15;
+
     public static final double EPS = 0.0001;
     private static double x ;
     private static double lambda;
@@ -40,30 +38,5 @@ public class Iterations {
         return x0;
     }
 
-    public static double f(double x) {
-        switch (tmpCounter) {
-            case 1:
-                return Math.abs(Math.pow(x, 3) - x) - 2*x + 2;
-            case 2:
-                return Math.pow(x, 3) - 3 * Math.pow(x, 2) + 6 * x + 3;
-            case 3:
 
-                return -5*Math.pow(x,2) - 2*x;
-        }
-        return 0;
-    }
-
-
-    public static double df(double x) {
-        switch (tmpCounter) {
-            case 1:
-                return 3*x*x *Math.abs(x*x*x - x)/(x*x*x -x) -2;
-            case 2:
-                return 3 * Math.pow(x, 2) - 6 * x + 6;
-            case 3:
-
-                return -10 * x -2;
-        }
-        return 0;
-    }
 }
