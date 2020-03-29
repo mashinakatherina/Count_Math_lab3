@@ -1,6 +1,5 @@
 package Part2.lab3;
 
-
 import Part2.lab3.gui.UserInterface;
 
 public class Main {
