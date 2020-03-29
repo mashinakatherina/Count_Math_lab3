@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce9fb77d-6540-4f33-b4bf-cda04df5c228" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Part1/lab3/Func.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Part1/lab3/Func.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Part1/lab3/Iterations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Part1/lab3/Iterations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Part1/lab3/Newtone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Part1/lab3/Newtone.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +88,7 @@
       <updated>1585474239099</updated>
       <workItem from="1585474243929" duration="283000" />
       <workItem from="1585475046591" duration="1899000" />
-      <workItem from="1585478233849" duration="5974000" />
+      <workItem from="1585478233849" duration="6304000" />
     </task>
     <task id="LOCAL-00001" summary="All first part works (imho)">
       <created>1585475259813</created>
@@ -135,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585524942499</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="todo write counting for part 2&#10;part 1 -ok">
+      <created>1585526143767</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1585526143767</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,10 +158,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="295" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1585478345850" />
-    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1585524940966">
+    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1585526142039">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1585524940966" />
+    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1585526142039" />
     <state width="1493" height="207" key="GridCell.Tab.0.bottom" timestamp="1585526085369">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -178,10 +182,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1585477444678" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1585524950848">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1585526148662">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1585524950848" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1585526148662" />
     <state x="463" y="144" width="609" height="536" key="find.popup" timestamp="1585481978651">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
