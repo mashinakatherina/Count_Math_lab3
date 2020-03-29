@@ -23,7 +23,7 @@ import java.util.concurrent.atomic.AtomicReference;
         private int width, height;
         private final String errorTitle = "Ошибка";
 
-        public UserInterface(Function baseFunction1) {
+        public UserInterface(Function baseFunction1, Function baseFunction2) {
             this.baseFunction1 = baseFunction1;
         }
 
@@ -86,12 +86,12 @@ import java.util.concurrent.atomic.AtomicReference;
                 String function = (String) (((JComboBox) e.getSource()).getSelectedItem());
                 switch (function) {
                     case "1":
-                        this.baseFunction1 = Math::exp;
-                        this.baseFunction2 = arg -> Math.abs(Math.pow(arg,3) - arg) -3*arg -3;
+                        this.baseFunction1 = arg -> Math.abs(arg-2);
+                        this.baseFunction2 = arg -> Math.pow(arg,3) - 2*arg + 1;
                         break;
                     case "2":
-                        this.baseFunction1 = arg -> 1 / (Math.pow(arg, 4) + 4);
-                        this.baseFunction2 = arg -> Math.pow(arg*arg + arg*3,3) / (Math.pow(arg, 4) + 5);
+                        this.baseFunction1 = arg -> (Math.pow(arg, 2) + 5);
+                        this.baseFunction2 = arg -> Math.pow(arg*arg + arg*3,1.5) + 2;
                         break;
                     case "3":
                         this.baseFunction1 = arg -> arg * arg;

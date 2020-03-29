@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        UserInterface userInterface = new UserInterface(Math::exp);
+        UserInterface userInterface = new UserInterface(arg -> Math.abs(arg-2), arg -> Math.pow(arg,3) - 2*arg + 1);
         userInterface.draw(1500, 700);
     }
 }
