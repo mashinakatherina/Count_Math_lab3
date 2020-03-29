@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce9fb77d-6540-4f33-b4bf-cda04df5c228" name="Default Changelist" comment="" />
+    <list default="true" id="ce9fb77d-6540-4f33-b4bf-cda04df5c228" name="Default Changelist" comment="All first part works (imho)">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Part2/lab3/Function.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Part2/lab3/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Part2/lab3/gui/GraphMaker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Part2/lab3/gui/UserInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +16,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -18,6 +25,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ZnUEPLpipyDcvKj07ctzfw2cfo" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -27,7 +35,50 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RunManager" selected="Application.Main (1)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Part2.lab3.Main" />
+      <module name="Math_Lab3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Part2.lab3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Part1.lab3.Main" />
+      <module name="Math_Lab3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Part1.lab3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -40,10 +91,69 @@
       <option name="presentableId" value="Default" />
       <updated>1585474239099</updated>
       <workItem from="1585474243929" duration="283000" />
+      <workItem from="1585475046591" duration="1899000" />
+      <workItem from="1585478233849" duration="2416000" />
     </task>
+    <task id="LOCAL-00001" summary="All first part works (imho)">
+      <created>1585475259813</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585475259813</updated>
+    </task>
+    <task id="LOCAL-00002" summary="All first part works (imho)">
+      <created>1585475510642</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1585475510642</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="All first part works (imho)" />
+    <option name="LAST_COMMIT_MESSAGE" value="All first part works (imho)" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="295" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1585478345850">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="295" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1585478345850" />
+    <state x="393" y="9" key="CommitChangelistDialog2" timestamp="1585475509540">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="393" y="9" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1585475509540" />
+    <state width="1493" height="209" key="GridCell.Tab.0.bottom" timestamp="1585482915023">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="209" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585482915023" />
+    <state width="1493" height="209" key="GridCell.Tab.0.center" timestamp="1585482915023">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="209" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1585482915023" />
+    <state width="1493" height="209" key="GridCell.Tab.0.left" timestamp="1585482915023">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="209" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1585482915023" />
+    <state width="1493" height="209" key="GridCell.Tab.0.right" timestamp="1585482915023">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="209" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1585482915023" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1585477444678">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1585477444678" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1585475519764">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1585475519764" />
+    <state x="463" y="144" width="609" height="536" key="find.popup" timestamp="1585481978651">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="463" y="144" width="609" height="536" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1585481978651" />
   </component>
 </project>
