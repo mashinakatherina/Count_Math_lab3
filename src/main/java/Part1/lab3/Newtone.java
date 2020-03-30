@@ -9,15 +9,19 @@ public class Newtone  {
     private static final double EPS = 0.0001;
     private static double x = 0;
 
+    public static double countStartX(double minRange, double maxRange, double x) {
+        if (f(minRange)*df(maxRange) < 0) {
+            return minRange;
+        }
+        else
+        {
+            return maxRange;
+        }
+    }
 
     public static double countXByNewtone() {
         int n = 0;
-        if (f(MIN_RANGE) * df(MAX_RANGE) < 0){
-            x =MIN_RANGE;
-        }
-        else {
-            x = MAX_RANGE;
-        }
+        x = countStartX(MIN_RANGE, MAX_RANGE, x);
         double counter = 0;
         counter = Math.abs(df(x));
         while (counter > EPS) {
