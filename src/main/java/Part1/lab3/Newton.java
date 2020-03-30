@@ -4,7 +4,7 @@ package Part1.lab3;
 import static Part1.lab3.Func.*;
 import static Part1.lab3.Func.MAX_RANGE;
 import static Part1.lab3.Func.MIN_RANGE;
-public class Newtone  {
+public class Newton {
 
     private static final double EPS = 0.0001;
     private static double x = 0;
@@ -19,7 +19,7 @@ public class Newtone  {
         }
     }
 
-    public static double countXByNewtone() {
+    public static double countXByNewton() {
         int n = 0;
         x = countStartX(MIN_RANGE, MAX_RANGE, x);
         double counter = 0;

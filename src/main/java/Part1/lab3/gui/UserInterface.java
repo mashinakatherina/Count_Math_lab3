@@ -12,7 +12,7 @@ import java.util.Arrays;
 import java.util.concurrent.atomic.AtomicReference;
 
 import static Part1.lab3.Iterations.countXByIterations;
-import static Part1.lab3.Newtone.countXByNewtone;
+import static Part1.lab3.Newton.countXByNewton;
 
 public class UserInterface {
     public static int tmpCounter;
@@ -181,7 +181,7 @@ public class UserInterface {
         newtonButton.addActionListener(event -> {
             double solutionNX;
 
-            solutionNX = countXByNewtone();
+            solutionNX = countXByNewton();
             mainPanel.remove(graphPanel);
             graphPanel = getGraphPanel(width, height, solutionNX);
             mainPanel.add(graphPanel);

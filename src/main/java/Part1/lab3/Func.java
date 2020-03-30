@@ -9,8 +9,8 @@ public class Func {
     public static double f(double x) {
         switch (tmpCounter) {
             case 1:
-                 MIN_RANGE = -15;
-                MAX_RANGE = 15;
+                 MIN_RANGE = 0;
+                MAX_RANGE = 5;
                 return Math.abs(Math.pow(x, 3) - x) - 2*x + 2;
 
             case 2:
