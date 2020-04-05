@@ -3,6 +3,7 @@ package Part2.lab3.gui;
 
 
 import Part2.lab3.Function;
+import Part2.lab3.Iterations;
 
 import javax.swing.*;
 import java.awt.*;
@@ -13,7 +14,9 @@ import java.awt.event.KeyEvent;
 import java.util.Arrays;
 import java.util.concurrent.atomic.AtomicReference;
 
-    public class UserInterface {
+import static Part2.lab3.Iterations.countX;
+
+public class UserInterface {
         private JFrame mainFrame;
         private Function baseFunction1;
         private Function baseFunction2;
@@ -171,26 +174,17 @@ import java.util.concurrent.atomic.AtomicReference;
 
         private JTextField createChangeYValuePanel() {
             JPanel changePanel = new JPanel();
-            //controlPanel.add(changePanel);
-           // JLabel changeLabel = new JLabel("Введите узел, в котором нужно поменять значение функции:");
-            //changePanel.add(changeLabel);
+
             JTextField changeField = new JTextField(7);
-            //changePanel.add(changeField);
             return changeField;
         }
 
         private void createMakeGraphButton(int xAmount, AtomicReference<JPanel> argsPanel, JTextField changeField) {
             JButton mainButton = new JButton("Построить график");
             mainButton.addActionListener(event -> {
-//                for (int i = 0; i < xAmount - 1; i++) {
-//                    if (((JTextField) argsPanel.get().getComponent(i)).getText().equals("")) {
-//                        JOptionPane.showMessageDialog(mainFrame, "Заполните все значения Х",
-//                                errorTitle, JOptionPane.ERROR_MESSAGE);
-//                        return;
-//                    }
-//                }
+
 //todo пофиксить решения
-                double changeX = 0;
+                double changeX = countX();
 //                try {
 //                    changeX = Double.parseDouble(changeField.getText().replace(',', '.'));
 //                } catch (NumberFormatException e) {
@@ -212,6 +206,7 @@ import java.util.concurrent.atomic.AtomicReference;
             });
             controlPanel.add(mainButton);
         }
+
 
 //        private void createInterpolatedValueField() {
 //            JPanel findValuePanel = new JPanel();
