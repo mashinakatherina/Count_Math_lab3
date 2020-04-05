@@ -16,6 +16,15 @@ public class Iterations {
 
     do
     {
+        //       sin(y + 2) - x = 15;
+        //       y + cos(x - 2) = 0.5;
+        //
+        //        x=sin(y0+2)-15;
+        //        y=0.5-cos(x0-2);
+        //        d1=sin(y+2)-x-15;
+        //        d2=y+cos(x-2)-0.5;
+        //        x0=x;
+        //        y0=y;
         x=signifyX(tmpCount);
         y=signifyY(tmpCount);
         d1=signifyd1(tmpCount);
