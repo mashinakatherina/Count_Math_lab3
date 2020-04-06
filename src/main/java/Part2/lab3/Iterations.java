@@ -11,7 +11,7 @@ public class Iterations {
     private static double d2 = 0;
     public static double y0 = 0;
     public static double x0 = 0;
-    static int tmpCount = 0;
+    static int tmpCount = 3;
     public static double countX() {
         do
         {
@@ -56,14 +56,14 @@ public class Iterations {
                 return Math.sin(y0+2)-15;
             case 1:
 
-                return Math.pow(y0, 1/5);
+                return Math.pow(y0, 0.2);
 
             case 2:
 
-                return Math.pow(y0-5, 1/2);
+                return Math.pow(y0-5, 0.5);
             case 3:
 
-                return Math.pow(y0, 1/2);
+                return Math.pow(y0, 0.5);
         }
         return 0;
     }
@@ -123,7 +123,6 @@ public class Iterations {
     }
 
     public static void main(String[] args) {
-       // int tmpCounter = 1;
         System.out.println(countX());
     }
 }
