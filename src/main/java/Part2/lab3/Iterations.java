@@ -22,6 +22,8 @@ public class Iterations {
             x0=x;
             y0=y;
         } while (Math.abs(d1) > EPS && Math.abs(d2)> EPS);
+        x0 =0;
+        y0= 0;
         return x;
     }
 
