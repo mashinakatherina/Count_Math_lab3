@@ -29,12 +29,9 @@ public class GraphMaker {
         double[] yData = new double[xData.length];
         for (int i = 0; i < yData.length; i++)
             yData[i] = baseFunction.getValue(xData[i]);
-//        XYSeries points = chart.addSeries("Узлы", xData, yData);
-//        points.setMarker(SeriesMarkers.CIRCLE);
-//        points.setMarkerColor(Color.BLUE);
-//        points.setLineColor(Color.WHITE);
 
-        XYSeries changeSeries = chart.addSeries("Измененное значение",
+
+        XYSeries changeSeries = chart.addSeries("Решение",
                 new double[]{changeX}, new double[]{changeY});
         changeSeries.setMarker(SeriesMarkers.CIRCLE);
         changeSeries.setMarkerColor(Color.RED);

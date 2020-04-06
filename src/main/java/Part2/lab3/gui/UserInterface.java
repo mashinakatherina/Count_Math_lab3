@@ -15,12 +15,12 @@ import java.util.Arrays;
 import java.util.concurrent.atomic.AtomicReference;
 
 import static Part2.lab3.Iterations.countX;
+import static Part2.lab3.Iterations.countY;
 
 public class UserInterface {
         private JFrame mainFrame;
         private Function baseFunction1;
         private Function baseFunction2;
-        private Function baseFunction3;
         private JPanel mainPanel, graphPanel, controlPanel;
         private double[] xData;
         private int width, height;
@@ -29,6 +29,7 @@ public class UserInterface {
 
         public UserInterface(Function baseFunction1, Function baseFunction2) {
             this.baseFunction1 = baseFunction1;
+            this.baseFunction2 = baseFunction2;
         }
 
         public void draw(int width, int height) {
@@ -45,7 +46,7 @@ public class UserInterface {
             final int firstXValueCount = 4;
             final int xAmount = 5;
 
-            mainFrame = new JFrame("Лабораторная работа №3");
+            mainFrame = new JFrame("Лабораторная работа №3 Часть 2");
             mainFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
             mainFrame.setSize(width, height);
             mainPanel = new JPanel(new GridLayout(0, 2));
@@ -81,13 +82,13 @@ public class UserInterface {
             JLabel s1 = new JLabel("Выберите систему уравнений для решения");
             selectFunctionPanel.add(s1);
             JLabel s2 = new JLabel("1)\n" +
-                    "");
+                    "y = x^3 - 2 && y = x^3 - 2x + 1");
             selectFunctionPanel.add(s2);
             JLabel s3 = new JLabel("2)\n" +
-                    "");
+                    "y = x^2 - 5 && y = (x - 3x)^(0.5) + 2");
             selectFunctionPanel.add(s3);
             JLabel label = new JLabel("3)\n" +
-                    "");
+                    "y = x^2 && y = x^3 + x");
             selectFunctionPanel.add(label);
             JComboBox<String> selectedFunction = new JComboBox<>();
             selectedFunction.addItem("Выбирите систему для решения");
@@ -100,7 +101,7 @@ public class UserInterface {
                 String function = (String) (((JComboBox) e.getSource()).getSelectedItem());
                 switch (function) {
                     case "1":
-                        this.baseFunction1 = arg -> Math.pow(arg,3);
+                        this.baseFunction1 = arg -> Math.pow(arg,3) - 2;
                         this.baseFunction2 = arg -> Math.pow(arg,3) - 2*arg + 1;
                         tmpCount = 1;
                         break;
@@ -199,43 +200,22 @@ public class UserInterface {
 
 //todo пофиксить решения
                 double changeX = countX();
+                double changeY = countY();
 
                     mainPanel.remove(graphPanel);
                     graphPanel = getGraphPanel(width, height, changeX);
                     mainPanel.add(graphPanel);
                     mainPanel.revalidate();
                     mainPanel.repaint();
+                JPanel findValuePanel = new JPanel();
+                controlPanel.add(findValuePanel);
+                JTextField findValueField = new JTextField(3);
+                JLabel valueLabel = new JLabel(String.format("(%s; %s)", "?", "?"));
+                findValuePanel.add(valueLabel);
+                valueLabel.setText(String.format("(%.3f; %.3f)", changeX, changeY));
             });
             controlPanel.add(mainButton);
         }
 
-
-//        private void createInterpolatedValueField() {
-//            JPanel findValuePanel = new JPanel();
-//            controlPanel.add(findValuePanel);
-//            JLabel findValueLabel = new JLabel("Введите значение х, в котором нужно найти значение функции");
-//            findValuePanel.add(findValueLabel);
-//            JTextField findValueField = new JTextField(3);
-//            findValuePanel.add(findValueField);
-//            JLabel valueLabel = new JLabel(String.format("f(%s)=%s", "?", "?"));
-//            JButton findValueButton = new JButton("Найти");
-//            findValuePanel.add(valueLabel);
-//            findValuePanel.add(findValueButton);
-//            findValueButton.addActionListener(e -> {
-//                if (baseFunction2 == null)
-//                    JOptionPane.showMessageDialog(mainFrame, "Сначала интерполируйте функцию",
-//                            errorTitle, JOptionPane.ERROR_MESSAGE);
-//                else {
-//                    try {
-//                        double value = baseFunction2.getValue(
-//                                Double.parseDouble(findValueField.getText().replace(',', '.')));
-//                        valueLabel.setText(String.format("f(%s)=%.3f", findValueField.getText(), value));
-//                    } catch (NumberFormatException e1) {
-//                        JOptionPane.showMessageDialog(mainFrame, "Значения Х должно быть числом",
-//                                errorTitle, JOptionPane.ERROR_MESSAGE);
-//                    }
-//                }
-//            });
-//        }
 
     }

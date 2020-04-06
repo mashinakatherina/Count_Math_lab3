@@ -25,6 +25,19 @@ public class Iterations {
         x0 =0;
         y0= 0;
         return x;
+    } public static double countY() {
+        do
+        {
+            x=signifyX(tmpCount);
+            y=signifyY(tmpCount);
+            d1= signifyD1(tmpCount);
+            d2= signifyD2(tmpCount);
+            x0=x;
+            y0=y;
+        } while (Math.abs(d1) > EPS && Math.abs(d2)> EPS);
+        x0 =0;
+        y0= 0;
+        return y;
     }
 
     public static double signifyX(int tmpCounter) {
@@ -32,8 +45,8 @@ public class Iterations {
             case 0:
                 return Math.sin(y0+2)-15;
             case 1:
-
-                return Math.pow(y0, 0.33);
+               // System.out.println(Math.pow(y0+2, 1d/3));
+                return Math.pow(y0+2, 1d/3);
 
             case 2:
 
@@ -69,7 +82,7 @@ public class Iterations {
                 return Math.sin(y+2)-x-15;
             case 1:
 
-                return Math.pow(x,3) - y;
+                return Math.pow(x,3) - 2 - y;
 
             case 2:
 
