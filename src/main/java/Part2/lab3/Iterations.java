@@ -5,6 +5,7 @@ public class Iterations {
     public static final int MAX_NUMBER_OF_ITERATIONS = 100000;
     public static double y0 = 0;
     public static double x0 = 0;
+    
     public static double countX(Function f1, Function f2) {
         int k = 0;
         double d1, d2, x, y;

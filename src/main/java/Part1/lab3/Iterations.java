@@ -4,6 +4,7 @@ import static Part1.lab3.Func.*;
 public class Iterations {
 
     public static final double EPS = 0.0001;
+    public static final int MAX_NUMBER_OF_ITERATIONS = 10000;
     private static double x ;
     private static double lambda;
 
@@ -34,7 +35,7 @@ public class Iterations {
             x = x - lambda * (f(x));
             fx = f(x0);
             count++;
-        } while (Math.abs(x - x0) >= EPS || count <= 10000);
+        } while (Math.abs(x - x0) >= EPS || count <= MAX_NUMBER_OF_ITERATIONS);
         return x0;
     }
 
