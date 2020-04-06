@@ -80,71 +80,63 @@ public class UserInterface {
     private void createSelectFunctionPanel() {
         JPanel selectFunctionPanel = new JPanel();
         JLabel s1 = new JLabel("Выберите систему уравнений для решения");
-        selectFunctionPanel.add(s1);
-        JLabel s2 = new JLabel("1)\n" +
-                "y = x^3 - 2 && y = x^3 - 2x + 1");
-        selectFunctionPanel.add(s2);
-        JLabel s3 = new JLabel("2)\n" +
-                "y = x^2 - 5 && y = (x - 3x)^(0.5) + 2");
-        selectFunctionPanel.add(s3);
-        JLabel label = new JLabel("3)\n" +
-                "y = x^2 && y = x^3 + x");
-        selectFunctionPanel.add(label);
-        JComboBox<String> selectedFunction = new JComboBox<>();
-        selectedFunction.addItem("Выбирите систему для решения");
-        selectedFunction.addItem("1");
-        selectedFunction.addItem("2");
-        selectedFunction.addItem("3");
-        selectFunctionPanel.add(selectedFunction);
+
+        JComboBox<String> selectedFunction1 = new JComboBox<>();
+        selectedFunction1.addItem("Выберите первую функцию");
+        selectedFunction1.addItem("f(x) = x^5 - 5");
+        selectedFunction1.addItem("f(x) = 2x^5 - 5");
+        selectFunctionPanel.add(selectedFunction1);
         controlPanel.add(selectFunctionPanel);
-        selectedFunction.addActionListener(e -> {
+        selectedFunction1.addActionListener(e -> {
             String function = (String) (((JComboBox) e.getSource()).getSelectedItem());
             switch (function) {
-                case "1":
+                case "f(x) = x^5 - 5":
                     this.baseFunction1 = new Function() {
                         @Override
                         public double getValue(double arg) {
-                            return Math.pow(arg,3) - 2;
+                            return Math.pow(arg, 5)  - 5;
                         }
                         @Override
                         public double signifyX(double y) {
-                            return Math.pow(y + 2, 1d/3);
+                            return Math.pow((y + 5), 0.2);
                         }
                     };
-
-                    this.baseFunction2 = arg -> Math.pow(arg,3) - 2*arg+ 1;
                     break;
-                case "2":
+                case "f(x) = 2x^5 - 5":
                     this.baseFunction1 = new Function() {
                         @Override
                         public double getValue(double arg) {
-                            return Math.pow(arg, 2) - 5;
+                            return Math.pow(arg, 5) * 2 - 5;
                         }
-
                         @Override
                         public double signifyX(double y) {
-                            return Math.sqrt(y + 5);
+                            return Math.pow(0.5 * (y + 5), 0.2);
                         }
                     };
-                    this.baseFunction2 = arg -> Math.pow(arg + arg*3,0.5) + 2;
-                    break;
-                case "3":
-                    this.baseFunction1 = new Function() {
-                        @Override
-                        public double getValue(double arg) {
-                            return arg * arg;
-                        }
-
-                        @Override
-                        public double signifyX(double y) {
-                            return Math.sqrt(y);
-                        }
-                    };
-                    this.baseFunction2 = arg -> (arg*arg*arg)+ arg;
                     break;
 
             }
         });
+
+        JComboBox<String> selectedFunction2 = new JComboBox<>();
+        selectedFunction2.addItem("Выберите вторую функцию");
+        selectedFunction2.addItem("f(x) = -x^3 + 1");
+        selectedFunction2.addItem("f(x) = e^x");
+        selectFunctionPanel.add(selectedFunction2);
+        controlPanel.add(selectFunctionPanel);
+        selectedFunction2.addActionListener(e -> {
+            String function = (String) (((JComboBox) e.getSource()).getSelectedItem());
+            switch (function) {
+                case "f(x) = -x^3 + 1":
+                    this.baseFunction2 = arg -> -Math.pow(arg,3) + 1;
+                    break;
+                case "f(x) = e^x":
+                    this.baseFunction2 = arg -> Math.pow(Math.E, arg);
+                    break;
+            }
+        });
+
+
     }
 
     private AtomicReference<JPanel> createInterpolationNodeFields(int firstXValue, int xAmount) {

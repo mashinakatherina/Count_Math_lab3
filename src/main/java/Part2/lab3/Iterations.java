@@ -5,7 +5,7 @@ public class Iterations {
     public static double y0 = 0;
     public static double x0 = 0;
     public static double countX(Function f1, Function f2) {
-        double d1, d2, x, y;
+        double d1 = 0, d2 = 0, x = 0, y = 0;
         do
         {
             x = f1.signifyX(y0);
