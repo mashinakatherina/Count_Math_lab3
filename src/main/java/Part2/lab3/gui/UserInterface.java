@@ -3,7 +3,6 @@ package Part2.lab3.gui;
 
 
 import Part2.lab3.Function;
-import Part2.lab3.Iterations;
 
 import javax.swing.*;
 import java.awt.*;
@@ -21,11 +20,9 @@ public class UserInterface {
     private JFrame mainFrame;
     private Function baseFunction1;
     private Function baseFunction2;
-    private Function baseFunction3;
     private JPanel mainPanel, graphPanel, controlPanel;
     private double[] xData;
     private int width, height;
-    public static int tmpCount;
     private final String errorTitle = "Ошибка";
 
     public UserInterface(Function baseFunction1, Function baseFunction2) {
@@ -79,8 +76,8 @@ public class UserInterface {
 
     private void createSelectFunctionPanel() {
         JPanel selectFunctionPanel = new JPanel();
-        JLabel s1 = new JLabel("Выберите систему уравнений для решения");
-
+        JLabel s1 = new JLabel("Выберите систему уравнений для решения: ");
+        selectFunctionPanel.add(s1);
         JComboBox<String> selectedFunction1 = new JComboBox<>();
         selectedFunction1.addItem("Выберите первую функцию");
         selectedFunction1.addItem("f(x) = x^5 - 5");
