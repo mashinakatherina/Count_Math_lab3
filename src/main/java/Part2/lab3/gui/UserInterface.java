@@ -189,24 +189,12 @@ public class UserInterface {
 
 //todo пофиксить решения
                 double changeX = countX();
-//                try {
-//                    changeX = Double.parseDouble(changeField.getText().replace(',', '.'));
-//                } catch (NumberFormatException e) {
-//                    JOptionPane.showMessageDialog(mainFrame, "Выберите узел, в котором нужно заменить значение функции",
-//                            errorTitle, JOptionPane.ERROR_MESSAGE);
-//                    return;
-//                }
-//
-//                if (Arrays.stream(xData).noneMatch(n -> Double.compare(n, changeX) == 0)) {
-//                    JOptionPane.showMessageDialog(mainFrame, "Точка, в которой нужно заменить " +
-//                            "значение функции должна быть узлом интерполяции", errorTitle, JOptionPane.ERROR_MESSAGE);
-//                } else {
+
                     mainPanel.remove(graphPanel);
                     graphPanel = getGraphPanel(width, height, changeX);
                     mainPanel.add(graphPanel);
                     mainPanel.revalidate();
                     mainPanel.repaint();
-               // }
             });
             controlPanel.add(mainButton);
         }
