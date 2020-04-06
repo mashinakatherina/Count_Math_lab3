@@ -78,9 +78,19 @@ public class UserInterface {
 
         private void createSelectFunctionPanel() {
             JPanel selectFunctionPanel = new JPanel();
-            JLabel label = new JLabel("Выберите функцию");
+            JLabel s1 = new JLabel("Выберите систему уравнений для решения");
+            selectFunctionPanel.add(s1);
+            JLabel s2 = new JLabel("1)\n" +
+                    "");
+            selectFunctionPanel.add(s2);
+            JLabel s3 = new JLabel("2)\n" +
+                    "");
+            selectFunctionPanel.add(s3);
+            JLabel label = new JLabel("3)\n" +
+                    "");
             selectFunctionPanel.add(label);
             JComboBox<String> selectedFunction = new JComboBox<>();
+            selectedFunction.addItem("Выбирите систему для решения");
             selectedFunction.addItem("1");
             selectedFunction.addItem("2");
             selectedFunction.addItem("3");
@@ -90,18 +100,18 @@ public class UserInterface {
                 String function = (String) (((JComboBox) e.getSource()).getSelectedItem());
                 switch (function) {
                     case "1":
-                        this.baseFunction1 = arg -> Math.pow(arg,5);
+                        this.baseFunction1 = arg -> Math.pow(arg,3);
                         this.baseFunction2 = arg -> Math.pow(arg,3) - 2*arg + 1;
                         tmpCount = 1;
                         break;
                     case "2":
-                        this.baseFunction1 = arg -> (Math.pow(arg, 2) + 5);
-                        this.baseFunction2 = arg -> Math.pow(arg*arg + arg*3,1.5) + 2;
+                        this.baseFunction1 = arg -> (Math.pow(arg, 2) - 5);
+                        this.baseFunction2 = arg -> Math.pow(arg + arg*3,0.5) + 2;
                         tmpCount = 2;
                         break;
                     case "3":
                         this.baseFunction1 = arg -> arg * arg;
-                        this.baseFunction2 = arg -> (arg*arg*arg)+arg;
+                        this.baseFunction2 = arg -> (arg*arg*arg)+ arg;
                         tmpCount = 3;
                         break;
 

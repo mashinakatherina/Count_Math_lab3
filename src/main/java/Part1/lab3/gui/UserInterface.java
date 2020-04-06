@@ -73,9 +73,10 @@ public class UserInterface {
 
     private void createSelectFunctionPanel() {
         JPanel selectFunctionPanel = new JPanel();
-        JLabel label = new JLabel("Выберите функцию");
+        JLabel label = new JLabel("Выберите уравнение для решения");
         selectFunctionPanel.add(label);
         JComboBox<String> selectedFunction = new JComboBox<>();
+        selectedFunction.addItem("Выбирите уравнение для решения");
         selectedFunction.addItem("|x^3 - x| - 2*x = -1");
         selectedFunction.addItem("x^3 - 3*x^2 - 6*x = -3");
         selectedFunction.addItem("-5*x^2 - 2*x = 0");
