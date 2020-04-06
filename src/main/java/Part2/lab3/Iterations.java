@@ -5,11 +5,11 @@ public class Iterations {
     public static double y0 = 0;
     public static double x0 = 0;
     public static double countX(Function f1, Function f2) {
-        double d1, d2, x;
+        double d1, d2, x, y;
         do
         {
-            x = f1.expressX(y0);
-            double y = f2.getValue(x0);
+            x = f1.signifyX(y0);
+            y = f2.getValue(x0);
             d1 = f1.equateToZero(x, y);
             d2 = f2.equateToZero(x, y);
             x0 = x;
@@ -18,11 +18,13 @@ public class Iterations {
         x0 = 0;
         y0 = 0;
         return x;
-    }public static double countY(Function f1, Function f2) {
-        double d1, d2, x, y;
+    }
+
+    public static double countY(Function f1, Function f2) {
+        double d1, d2, y;
         do
         {
-            x = f1.expressX(y0);
+            double x = f1.signifyX(y0);
             y = f2.getValue(x0);
             d1 = f1.equateToZero(x, y);
             d2 = f2.equateToZero(x, y);

@@ -107,7 +107,7 @@ public class UserInterface {
                             return Math.pow(arg,3) - 2;
                         }
                         @Override
-                        public double expressX(double y) {
+                        public double signifyX(double y) {
                             return Math.pow(y + 2, 1d/3);
                         }
                     };
@@ -122,7 +122,7 @@ public class UserInterface {
                         }
 
                         @Override
-                        public double expressX(double y) {
+                        public double signifyX(double y) {
                             return Math.sqrt(y + 5);
                         }
                     };
@@ -136,7 +136,7 @@ public class UserInterface {
                         }
 
                         @Override
-                        public double expressX(double y) {
+                        public double signifyX(double y) {
                             return Math.sqrt(y);
                         }
                     };
