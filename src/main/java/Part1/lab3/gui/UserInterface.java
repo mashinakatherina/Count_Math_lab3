@@ -77,24 +77,24 @@ public class UserInterface {
         selectFunctionPanel.add(label);
         JComboBox<String> selectedFunction = new JComboBox<>();
         selectedFunction.addItem("Выбирите уравнение для решения");
-        selectedFunction.addItem("|x^3 - x| - 2*x = -1");
+        selectedFunction.addItem("-x^3 = 1");
         selectedFunction.addItem("x^3 - 3*x^2 - 6*x = -3");
-        selectedFunction.addItem("-5*x^2 - 2*x = 0");
+        selectedFunction.addItem("x^5 - 1 = 0");
         selectFunctionPanel.add(selectedFunction);
         controlPanel.add(selectFunctionPanel);
         selectedFunction.addActionListener(e -> {
             String function = (String)(((JComboBox)e.getSource()).getSelectedItem());
             switch (function) {
-                case "|x^3 - x| - 2*x = -1":
-                    this.baseFunction = arg -> Math.abs(Math.pow(arg, 3) - arg) - 2*arg +2;
+                case "-x^3 = 1":
+                    this.baseFunction = arg -> - Math.pow(arg,3) - 1;
                     tmpCounter = 1;
                     break;
                 case "x^3 - 3*x^2 - 6*x = -3":
                     this.baseFunction = arg -> Math.pow(arg, 3) - 3 * Math.pow(arg, 2) + 6 * arg + 3;
                     tmpCounter = 2;
                     break;
-                case "-5*x^2 - 2*x = 0":
-                    this.baseFunction = arg -> arg*arg;
+                case "x^5 - 1 = 0":
+                    this.baseFunction = arg -> Math.pow(arg, 5) - 1;
                     tmpCounter = 3;
                     break;
             }
